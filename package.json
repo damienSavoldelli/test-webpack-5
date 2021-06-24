@@ -4,7 +4,9 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "npx webpack --config webpack.config.js",
+    "dev-config": "npx webpack --config webpack.config.js",
+    "dev": "NODE_ENV=dev npx webpack",
+    "prod": "npx webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

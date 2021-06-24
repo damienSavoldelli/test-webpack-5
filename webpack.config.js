@@ -1,9 +1,13 @@
 const path = require('path');
 
-module.exports = {
+const dev = process.env.NODE_ENV === "dev"
+
+
+
+let config = {
   entry: './assets/js/app.js',
-  watch: true,
-  mode: 'development',
+  watch: dev,
+  mode: 'production',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -32,3 +36,9 @@ module.exports = {
     ]
   }  
 }
+
+if (dev) {
+  config.mode = "development"
+}
+
+module.exports = config
