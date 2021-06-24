@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "dev-config": "npx webpack --config webpack.config.js",
-    "dev": "NODE_ENV=dev npx webpack",
-    "prod": "npx webpack",
+    "dev": "NODE_ENV=dev webpack",
+    "prod": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -18,5 +18,8 @@
     "babel-loader": "^8.2.2",
     "webpack": "^5.40.0",
     "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
