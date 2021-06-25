@@ -15,6 +15,6 @@ Liens utiles :
 - doc babel :
 - vidéo grafikart : https://grafikart.fr/formations/webpack
 
---
+---
 cmd :
 npm run dev: "npx webpack --config webpack.config.js"
