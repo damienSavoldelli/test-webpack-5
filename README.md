@@ -4,7 +4,7 @@
 Installation de webpack 5 & babel afin de gérer :
 - es5
 - minification
-- lazy loding
+- lazy loading (testé mais infructueu)
 - css / scsss (postCss ?)
 - mise en cache
 - esLint (?)
